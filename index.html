@@ -22,7 +22,7 @@
         <div id="bg"></div>
 
         <div id="category">
-            <h2>Product <img onclic src="img/tune_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></h2>
+            <h2>Product <img  onclick="filterToggle()" src="img/tune_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></h2>
             <p>Showing 1-10 of 100 Products</p>
         </div>
         
@@ -72,7 +72,7 @@
 
         <div id="filter">
             <form action="">
-                <h3>Filter <a href="" id="close"><span class="material-symbols-outlined"> close</span></a></h3>
+                <h3>Filter <span onclick="filterToggle()" class="material-symbols-outlined"> close</span></h3>
                 <div id="bar-filter"></div>
                 <div id="category">
                     <a href="">T-shirts</a>
@@ -89,14 +89,14 @@
                 <div id="bar-filter"></div>
                 <h3>Color</h3>
                 <input type="color" name="" id="">
-                <input type="submit" value="Apply Filter">
+                <input type="button" value="Apply Filter">
             </form>
         </div>
         <div id="newsletter">
             <h3>STAY UP TO DATE <br> ABOUT OUR <br> LASTEST OFFERS</h3>
             <form action="#">
                 <input type="email" placeholder="    Enter your email adress" name="" id="news">
-                <input id="submitnews" type="button" onclick="closeNews()" value="Subscribe to newsletter">
+                <input id="submitnews" type="button"  value="Subscribe to newsletter">
             </form>
         </div>
 

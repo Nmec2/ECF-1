@@ -91,6 +91,11 @@ time, mark, audio, video {
     font-size: 18px;
 }
 
+#category img {
+    margin-left: 10px;
+    border: 1px solid black;
+}
+
 #category p {
     color: rgba(0, 0, 0, 60%);
     margin-top: 5px;
@@ -267,17 +272,17 @@ time, mark, audio, video {
         color: #FFF;
     }
 
-    #filter form h3 a span {
+    #filter form h3 span {
         position: absolute;
         right: 30px;
         color: #FFF;
     }
 
-    #filter form h3 a {
+    /* #filter form h3 a {
         text-decoration: none;
         color: #000;
         color: #FFF;
-    }
+    } */
 
     #bar-filter {
         height: 1px;
@@ -302,7 +307,7 @@ time, mark, audio, video {
         width: 100px;
     }
 
-    #filter form input[type="submit"]{
+    #filter form input[type="button"]{
         margin-left: 20px;
         align-items: end;
         width: 311px;
