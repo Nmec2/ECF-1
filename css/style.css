@@ -153,7 +153,7 @@ time, mark, audio, video {
     flex-wrap: wrap;
     align-items: center;
     justify-self: center;
-    margin-top: 200px;
+    margin-top: 1200px;
     border-radius: 20px;
     height: 277px;
     width: 358px;
@@ -215,8 +215,6 @@ time, mark, audio, video {
 }
 
 #filter form h3 span {
-    position: absolute;
-    right: 30px;
     color: #FFF;
 }
 
@@ -261,7 +259,14 @@ time, mark, audio, video {
     font-family: 'Roboto';
 }
 
-#category a {
+#category2 {
+    display: grid;
+    gap: 5px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+#category2 a {
     font-family: 'Roboto';
     text-decoration: none;
     color: #FFF;
@@ -347,6 +352,10 @@ time, mark, audio, video {
     #grid-container{
         grid-template-columns: repeat(3, 1fr);
         row-gap: 100px;
+    }
+
+    #newsletter {
+        margin-top: 900px;
     }
 
     /* #bg{
@@ -461,7 +470,7 @@ time, mark, audio, video {
     #newsletter {
         position: fixed;
         bottom: 1px;
-        right: 150px;
+        right: 1px;
     }
     
 }
