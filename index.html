@@ -5,22 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
+    
 </head>
 <body>
     <header>
         <div id="container">
             <p>20% off for your first order.</p>
         </div>
-        <h1 id="brand">INSTA SHOP</h2>
+        <h1 id="brand">INSTA SHOP</h1>
         <div id="bar"></div>
     </header>
 
     <main>
+
+        <div id="bg"></div>
+
         <div id="category">
-            <h2>Product</h2>
+            <h2>Product <img onclic src="img/tune_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></h2>
             <p>Showing 1-10 of 100 Products</p>
         </div>
         
+        <div id="grid-container">
+            <div class="contain">
+                <p>Product</p>
+                <img src="img/Frame 105.png" height="10px" width="70px" alt="">
+                <h3 class="price">120€ <span id="rayer">160€</span><img src="img/Frame 66.png" alt=""></h3>
+            </div>
+            <div class="contain">
+                <p>Product</p>
+                <img src="img/Frame 105.png" height="10px" width="70px" alt="">
+                <h3 class="price">120€ <span id="rayer">160€</span><img src="img/Frame 66.png" alt=""></h3>
+            </div>
+            <div class="contain">
+                <p>Product</p>
+                <img src="img/Frame 105.png" height="10px" width="70px" alt="">
+                <h3 class="price">120€ <span id="rayer">160€</span><img src="img/Frame 66.png" alt=""></h3>
+            </div>
+            <div class="contain">
+                <p>Product</p>
+                <img src="img/Frame 105.png" height="10px" width="70px" alt="">
+                <h3 class="price">120€ <span id="rayer">160€</span><img src="img/Frame 66.png" alt=""></h3>
+            </div>
+            <div class="contain">
+                <p>Product</p>
+                <img src="img/Frame 105.png" height="10px" width="70px" alt="">
+                <h3 class="price">120€ <span id="rayer">160€</span><img src="img/Frame 66.png" alt=""></h3>
+            </div>
+            <div class="contain">
+                <p>Product</p>
+                <img src="img/Frame 105.png" height="10px" width="70px" alt="">
+                <h3 class="price">120€ <span id="rayer">160€</span><img src="img/Frame 66.png" alt=""></h3>
+            </div> 
+            <div class="contain">
+                <p>Product</p>
+                <img src="img/Frame 105.png" height="10px" width="70px" alt="">
+                <h3 class="price">120€ <span id="rayer">160€</span><img src="img/Frame 66.png" alt=""></h3>
+            </div> 
+            <div class="contain">
+                <p>Product</p>
+                <img src="img/Frame 105.png" height="10px" width="70px" alt="">
+                <h3 class="price">120€ <span id="rayer">160€</span><img src="img/Frame 66.png" alt=""></h3>
+            </div> 
+            
+        </div>
+
+        <div id="filter">
+            <form action="">
+                <h3>Filter <a href="" id="close"><span class="material-symbols-outlined"> close</span></a></h3>
+                <div id="bar-filter"></div>
+                <div id="category">
+                    <a href="">T-shirts</a>
+                    <a href="">Shorts</a>
+                    <a href="">Sweat</a>
+                    <a href="">Jeans</a>
+                </div>
+                <br>
+                <div id="bar-filter"></div>
+                <h3>Price</h3>
+                <input type="range" name="" min="0" max="500" id="range-price"> 
+                <br>
+                <br>
+                <div id="bar-filter"></div>
+                <h3>Color</h3>
+                <input type="color" name="" id="">
+                <input type="submit" value="Apply Filter">
+            </form>
+        </div>
+        <div id="newsletter">
+            <h3>STAY UP TO DATE <br> ABOUT OUR <br> LASTEST OFFERS</h3>
+            <form action="#">
+                <input type="email" placeholder="    Enter your email adress" name="" id="news">
+                <input id="submitnews" type="button" onclick="closeNews()" value="Subscribe to newsletter">
+            </form>
+        </div>
 
     </main>
     
