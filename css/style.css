@@ -1,0 +1,86 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@font-face {
+    font-family: 'Roboto';
+    src:
+        url('../fonts/Roboto-Black.ttf') format('truetype'),
+        url('../fonts/Roboto-BlackItalic.ttf') format('truetype'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype'),
+        url('../fonts/Roboto-BoldItalic.ttf') format('truetype'),
+        url('../fonts/Roboto-Italic.ttf') format('truetype'),
+        url('../fonts/Roboto-Light.ttf') format('truetype'),
+        url('../fonts/Roboto-LightItalic.ttf') format('truetype'),
+        url('../fonts/Roboto-Medium.ttf') format('truetype'),
+        url('../fonts/Roboto-MediumItalic.ttf') format('truetype'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype'),
+        url('../fonts/Roboto-Thin.ttf') format('truetype'),
+        url('../fonts/Roboto-ThinItalic.ttf') format('truetype');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+#container {
+    height: 31px;
+    width: 100%;
+    background-color: #000;
+}
+
+#container p {
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+#brand {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: black;
+    display: flex;
+    padding-top: 15px;
+    justify-content: center;
+}
+
+#bar {
+    display: flex;
+    justify-self: center;
+    height: 1px;
+    margin-top: 15px;
+    width: 70%;
+    background-color: black;
+}
+
+#category {
+    margin-top: 5%;
+    margin-left: 10%;
+    display: flex;
+    gap: 20px;
+}
+
+#category h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
