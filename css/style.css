@@ -79,6 +79,7 @@ time, mark, audio, video {
 }
 
 #category {
+    position: relative;
     margin-top: 5%;
     margin-left: 10%;
     display: flex;
@@ -192,7 +193,157 @@ time, mark, audio, video {
 }
 
 
+#filter {
+    left: 35px;
+    top: 100px;
+
+    height: 500px;
+    width: 358px;
+    background: linear-gradient(to right bottom,#000, rgb(49, 49, 49));
+    /* backdrop-filter: blur(20px),
+                     hue-rotate(90deg); */
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+#filter form h3 {
+    margin: 20px 50px;
+    font-size: 19px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #FFF;
+}
+
+#filter form h3 span {
+    position: absolute;
+    right: 30px;
+    color: #FFF;
+}
+
+
+/* #filter form h3 a {
+    text-decoration: none;
+    color: #000;
+    color: #FFF;
+} */
+
+#bar-filter {
+    height: 1px;
+    width: 290px;
+    background-color: #FFF;
+    margin: 0 auto;
+    
+}
+
+#category {
+    display: grid;
+    gap: 5px;
+    text-decoration: none;
+}
+
+#range-price{
+    margin: 0px 120px;
+}
+
+#filter form input[type="color"]{
+    margin: 0px 120px;
+    width: 100px;
+}
+
+#filter form input[type="button"]{
+    margin-left: 20px;
+    align-items: end;
+    width: 311px;
+    height: 42px;
+    border: 1px solid #D9D9D9;
+    border-radius: 62px;
+    margin-top: 52px;
+    font-family: 'Roboto';
+}
+
+#category a {
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #FFF;
+}
+
+
 @media all and (min-width: 600px) {
+
+    #filter {
+        left: 35px;
+        top: 100px;
+
+        height: 500px;
+        width: 358px;
+        background: linear-gradient(to right bottom,#000, rgb(49, 49, 49));
+        /* backdrop-filter: blur(20px),
+                         hue-rotate(90deg); */
+        border-radius: 20px;
+        border: 1px solid black;
+    }
+
+    #filter form h3 {
+        margin: 20px 50px;
+        font-size: 19px;
+        font-family: 'Roboto';
+        font-weight: bold;
+        color: #FFF;
+    }
+
+    #filter form h3 span {
+        position: absolute;
+        right: 30px;
+        color: #FFF;
+    }
+    
+
+    /* #filter form h3 a {
+        text-decoration: none;
+        color: #000;
+        color: #FFF;
+    } */
+
+    #bar-filter {
+        height: 1px;
+        width: 290px;
+        background-color: #FFF;
+        margin: 0 auto;
+        
+    }
+
+    #category {
+        display: grid;
+        gap: 5px;
+        text-decoration: none;
+    }
+
+    #range-price{
+        margin: 0px 120px;
+    }
+
+    #filter form input[type="color"]{
+        margin: 0px 120px;
+        width: 100px;
+    }
+
+    #filter form input[type="button"]{
+        margin-left: 20px;
+        align-items: end;
+        width: 311px;
+        height: 42px;
+        border: 1px solid #D9D9D9;
+        border-radius: 62px;
+        margin-top: 52px;
+        font-family: 'Roboto';
+    }
+
+    #category a {
+        font-family: 'Roboto';
+        text-decoration: none;
+        color: #FFF;
+    }
+
     #grid-container{
         grid-template-columns: repeat(3, 1fr);
         row-gap: 100px;
@@ -223,8 +374,79 @@ time, mark, audio, video {
         column-gap: 30px;
     }
 
+    #filter {
+        left: 35px;
+        top: 100px;
+
+        height: 500px;
+        width: 358px;
+        background: linear-gradient(to right bottom,#000, rgb(49, 49, 49));
+        /* backdrop-filter: blur(20px),
+                         hue-rotate(90deg); */
+        border-radius: 20px;
+        border: 1px solid black;
+    }
+
+    #filter form h3 {
+        margin: 20px 50px;
+        font-size: 19px;
+        font-family: 'Roboto';
+        font-weight: bold;
+        color: #FFF;
+    }
+
+    #filter form h3 span {
+        position: absolute;
+        right: 30px;
+        color: #FFF;
+    }
     
-    
+
+    /* #filter form h3 a {
+        text-decoration: none;
+        color: #000;
+        color: #FFF;
+    } */
+
+    #bar-filter {
+        height: 1px;
+        width: 290px;
+        background-color: #FFF;
+        margin: 0 auto;
+        
+    }
+
+    #category {
+        display: grid;
+        gap: 5px;
+        text-decoration: none;
+    }
+
+    #range-price{
+        margin: 0px 120px;
+    }
+
+    #filter form input[type="color"]{
+        margin: 0px 120px;
+        width: 100px;
+    }
+
+    #filter form input[type="button"]{
+        margin-left: 20px;
+        align-items: end;
+        width: 311px;
+        height: 42px;
+        border: 1px solid #D9D9D9;
+        border-radius: 62px;
+        margin-top: 52px;
+        font-family: 'Roboto';
+    }
+
+    #category a {
+        font-family: 'Roboto';
+        text-decoration: none;
+        color: #FFF;
+    }
 
     .contain {
         height: 290px;
@@ -251,10 +473,7 @@ time, mark, audio, video {
     }
 
     #filter {
-        position: absolute;
-        right: 150px;
-        top: 1195px;
-
+        
         height: 500px;
         width: 358px;
         background: linear-gradient(to right bottom,#000, rgb(49, 49, 49));
@@ -277,6 +496,7 @@ time, mark, audio, video {
         right: 30px;
         color: #FFF;
     }
+    
 
     /* #filter form h3 a {
         text-decoration: none;

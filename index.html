@@ -23,6 +23,30 @@
 
         <div id="category">
             <h2>Product <img  onclick="filterToggle()" src="img/tune_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></h2>
+            <div id="filter">
+                <form action="">
+                    <h3>Filter <span onclick="filterToggle()" class="material-symbols-outlined"> close</span></h3>
+                    <div id="bar-filter"></div>
+                    <div id="category">
+                        <a href="">T-shirts</a>
+                        <a href="">Shorts</a>
+                        <a href="">Sweat</a>
+                        <a href="">Jeans</a>
+                    </div>
+                    <br>
+                    <div id="bar-filter"></div>
+                    <h3>Price</h3>
+                    <input type="range" name="" min="0" max="500" id="range-price"> 
+                    <br>
+                    <br>
+                    <div id="bar-filter"></div>
+                    <h3>Color</h3>
+                    <input type="color" name="" id="">
+                    <input type="button" value="Apply Filter">
+                </form>
+            </div>
+            
+    
             <p>Showing 1-10 of 100 Products</p>
         </div>
         
@@ -69,29 +93,6 @@
             </div> 
             
         </div>
-
-        <div id="filter">
-            <form action="">
-                <h3>Filter <span onclick="filterToggle()" class="material-symbols-outlined"> close</span></h3>
-                <div id="bar-filter"></div>
-                <div id="category">
-                    <a href="">T-shirts</a>
-                    <a href="">Shorts</a>
-                    <a href="">Sweat</a>
-                    <a href="">Jeans</a>
-                </div>
-                <br>
-                <div id="bar-filter"></div>
-                <h3>Price</h3>
-                <input type="range" name="" min="0" max="500" id="range-price"> 
-                <br>
-                <br>
-                <div id="bar-filter"></div>
-                <h3>Color</h3>
-                <input type="color" name="" id="">
-                <input type="button" value="Apply Filter">
-            </form>
-        </div>
         <div id="newsletter">
             <h3>STAY UP TO DATE <br> ABOUT OUR <br> LASTEST OFFERS</h3>
             <form action="#">
@@ -100,6 +101,7 @@
             </form>
         </div>
 
+        
     </main>
     
     <footer></footer>
