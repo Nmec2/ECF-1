@@ -45,11 +45,39 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+
+
+#modifier {
+    height: 360px;
+    width: 360px;
+    border-radius: 20px;
+    background-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.png"), linear-gradient(to right, #1B263B , #778DA9); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#mask-modifier {
+    position: absolute;
+    height: 360px;
+    width: 360px;
+    background-color: #FFF;
+    mask-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.png");
+    border-radius: 20px;
+    filter: brightness(70%);
+    mix-blend-mode: hard-light;
+}
+
+#modifier form {
+    padding-top: 380px;
+}
+
 #container {
     height: 31px;
     width: 100%;
     background-color: #000;
     position: fixed;
+    z-index: 1;
 }
 
 #container p {
@@ -95,13 +123,13 @@ time, mark, audio, video {
 #category img {
     margin-left: 10px;
     border: 1px solid black;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #category img:hover {
     border-radius: 50px;
     scale: 3.5;
-    backdrop-filter: blur(20px);
+    background-color: #FFF;
 }
 
 #category p {
@@ -155,10 +183,11 @@ time, mark, audio, video {
 
 .mask {
     position: absolute;
-    height: 290px;
-    width: 290px;
+    height: 172px;
+    width: 172px;
     background-color: red;
     mask-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.png");
+    border-radius: 20px;
     filter: brightness(70%);
     mix-blend-mode: hard-light;
 }
@@ -171,7 +200,10 @@ time, mark, audio, video {
     align-self: center;
     background-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.png"), linear-gradient(to right, #1B263B , #778DA9);
     background-color: #D9D9D9;
+    transition: all 0.4s ease-in-out;
 }
+
+
 
 .contain p {
     margin-top: 188px;
@@ -413,6 +445,13 @@ time, mark, audio, video {
         height: 200px;
         width: 200px;
     }
+
+    .mask {
+        height: 200px;
+        width: 200px;
+    }
+
+
     .contain p {
         margin-top: 228px;
         font-family: 'Roboto';
@@ -508,8 +547,14 @@ time, mark, audio, video {
         height: 290px;
         width: 290px;
         justify-self: end;
-        
     }
+
+    .mask {
+        height: 290px;
+        width: 290px;
+        /* justify-self: end; */
+    }
+
     .contain p {
         margin-top: 318px;
     }
@@ -609,6 +654,6 @@ time, mark, audio, video {
 
 }
 
-@media all and (min-width: 1700px){
+@media all and (min-width: 1765px){
     
 }
