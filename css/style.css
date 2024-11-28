@@ -95,11 +95,18 @@ time, mark, audio, video {
 #category img {
     margin-left: 10px;
     border: 1px solid black;
+    transition: all 0.2s ease-in-out;
+}
+
+#category img:hover {
+    border-radius: 50px;
+    scale: 3.5;
+    backdrop-filter: blur(20px);
 }
 
 #category p {
     color: rgba(0, 0, 0, 60%);
-    margin-top: 5px;
+    margin-bottom: 25px;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
@@ -119,13 +126,51 @@ time, mark, audio, video {
     background-color: #FFF;
 }
 
+#contain-footer {
+    margin-top: 80px;
+    background-color: #D9D9D9;
+    position: sticky;
+    bottom: 0px;
+    padding: 20px 30px;
+    font-family: 'Roboto';
+    z-index: -1;
+}
+
+#contain-footer h3 {
+    font-weight: bold;
+}
+
+#contain-footer ul  {
+    display: grid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    list-style-type: none;
+    justify-content: center;
+}
+
+#contain-footer ul li{
+    margin-top: 10px;
+}
+
+
+.mask {
+    position: absolute;
+    height: 290px;
+    width: 290px;
+    background-color: red;
+    mask-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.png");
+    filter: brightness(70%);
+    mix-blend-mode: hard-light;
+}
 
 .contain {
     height: 172px;
     width: 172px;
     border-radius: 20px;
-    background-color: #D9D9D9;
+    
     align-self: center;
+    background-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.png"), linear-gradient(to right, #1B263B , #778DA9);
+    background-color: #D9D9D9;
 }
 
 .contain p {
@@ -194,9 +239,10 @@ time, mark, audio, video {
 
 
 #filter {
-    left: 35px;
-    top: 100px;
-
+    left: -15px;
+    top: 60px;
+    /* margin-bottom: 70px; */
+    bottom: 30px;
     height: 500px;
     width: 358px;
     background: linear-gradient(to right bottom,#000, rgb(49, 49, 49));
@@ -276,8 +322,8 @@ time, mark, audio, video {
 @media all and (min-width: 600px) {
 
     #filter {
-        left: 35px;
-        top: 100px;
+        left: -15px;
+        top: 60px;
 
         height: 500px;
         width: 358px;
@@ -378,14 +424,15 @@ time, mark, audio, video {
 @media all and (min-width: 1000px) {
     
     #grid-container {
+        height: 2100px;
         width: 290px;
         right: 690px;
         column-gap: 30px;
     }
 
     #filter {
-        left: 35px;
-        top: 100px;
+        /* left: 35px;
+        top: 100px; */
 
         height: 500px;
         width: 358px;
@@ -562,8 +609,6 @@ time, mark, audio, video {
 
 }
 
-@media all and (min-width: 1798px){
-    #filter{
-        display: block;
-    }
+@media all and (min-width: 1700px){
+    
 }

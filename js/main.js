@@ -2,6 +2,20 @@ let newsletterId = document.getElementById('newsletter');
 
 let filterId = document.getElementById('filter');
 
+let color  =  document.getElementsByClassName("mask");
+
+for (let i = 0; i < color.length; i++) {
+    console.log(i);
+    let r = Math.floor(Math.random() * 255);
+    let g = Math.floor(Math.random() * 255);
+    let b = Math.floor(Math.random() * 255);
+    let col = "rgb(" + r + "," + g + "," + b + ")"
+    color[i].style.backgroundColor = col;
+    console.log(col)
+}
+
+
+
 function closeNews() {
     newsletterId.style.display = "none";
 }
@@ -11,5 +25,7 @@ function filterToggle() {
         filterId.style.display = "none";
     } else {
         filterId.style.display = "block";
+        filterId.style.position = "absolute";
     }
 }
+
