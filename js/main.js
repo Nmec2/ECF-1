@@ -26,9 +26,6 @@ colorInput.addEventListener("input", function() {
 
 
 
-
-
-
 function closeNews() {
     newsletterId.style.display = "none";
 }

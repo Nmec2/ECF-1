@@ -46,6 +46,10 @@ time, mark, audio, video {
 }
 
 
+.scroll-slide {
+    display: none;
+}
+
 
 #modifier {
     height: 360px;
@@ -655,5 +659,18 @@ time, mark, audio, video {
 }
 
 @media all and (min-width: 1765px){
-    
+    #right {
+        background: linear-gradient(to bottom right, #1B263B, #778DA9);
+        border-radius: 15px;
+        height: 2000px;
+        width: 470px;
+        position: absolute;
+        right: 30px;
+        top: 1220px;
+    }
+
+    .scroll-slide {
+        display: block;
+        margin: 50px 30px;
+    }
 }
