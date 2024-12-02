@@ -24,6 +24,10 @@ colorInput.addEventListener("input", function() {
     maskColor.style.backgroundColor = couleurChoice;
 })
 
+function short(){
+    
+}
+
 
 
 function closeNews() {

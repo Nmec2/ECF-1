@@ -45,17 +45,95 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+#product-contain{
+    display: flex;
+    height: 900px;
+    width: 100%;
+    margin-top: 20px;
+    background:  #778DA9;
+    justify-content: center;
+}
+
+
+#product-contain > div {
+    margin-top: 90px;
+    color: white;
+    font-family: 'Roboto';
+}
+
+/* #product-img {
+    height: 50%;
+     margin-top: 100px; 
+    
+} */
+
+#modifier > form {
+    /* margin-left: 100px; */
+    text-align: center;
+}
+
+#modifier > form > input {
+    width: 50%;
+    height: 30px;
+    border: 1px solid #1B263B;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 4px #1B263B;
+    
+}
+
+#modifier > form > input[type='number']{
+    height: 20px;
+}
+
+#modifier > form > input[type='submit'] {
+    background-color: #c2d5ec;
+    border-radius: 0px;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Roboto';
+    font-weight: bold;
+    
+}
+
+#modifier > form > input[type='submit']:hover {
+    background-color: #FFF;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 8px #FFF;
+}
+
+#modifier > form > label > p {
+    font-size: 20px;
+}
+
+#right {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    margin-top: 1000px;
+    /* flex-direction: inline; */
+    background: linear-gradient(to bottom right, #1B263B, #778DA9);
+    border-radius: 15px;
+    overflow: hidden;
+    v
+    
+}
 
 .scroll-slide {
-    display: none;
+    display: block;
+    width:  280px;
+    height: 280px;
+    object-fit: cover;
+    margin: 50px 50px;
+    
 }
 
 
 #modifier {
     height: 360px;
     width: 360px;
-    border-radius: 20px;
-    background-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.png"), linear-gradient(to right, #1B263B , #778DA9); 
+    border-radius: 10px;
+    background-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.png"), linear-gradient(to right bottom, #1B263B 50%, #778DA9, 10%, #778DA9); 
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
@@ -234,7 +312,7 @@ time, mark, audio, video {
     flex-wrap: wrap;
     align-items: center;
     justify-self: center;
-    margin-top: 1200px;
+    margin-top: 200px;
     border-radius: 20px;
     height: 277px;
     width: 358px;
@@ -356,6 +434,10 @@ time, mark, audio, video {
 
 
 @media all and (min-width: 600px) {
+
+    #right {
+        margin-top: 800px;
+    }
 
     #filter {
         left: -15px;
@@ -660,6 +742,9 @@ time, mark, audio, video {
 
 @media all and (min-width: 1765px){
     #right {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         background: linear-gradient(to bottom right, #1B263B, #778DA9);
         border-radius: 15px;
         height: 2000px;
@@ -667,10 +752,15 @@ time, mark, audio, video {
         position: absolute;
         right: 30px;
         top: 1220px;
+        margin-top: 0px;
     }
 
     .scroll-slide {
         display: block;
-        margin: 50px 30px;
+        width:  380px;
+        height: 380px;
+        object-fit: cover;
+        margin: 50px 50px;
+        overflow: hidden;
     }
 }

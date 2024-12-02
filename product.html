@@ -19,21 +19,38 @@
 
     <main>
 
-        <div id="modifier">
-            <div id="mask-modifier"></div>
-            <form action="index.html">
-                <h2>Choisissez une couleur :</h2>
-                <input type="color" name="" value="#FFFFFF" id="colorier">
-                <br>
-                <input type="submit" value="Revenir à l'accueil">
-            </form>
+        <div id="product-contain">
+            <!-- <img id="product-img" src="img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.png" alt=""> -->
+             
+            <div id="modifier">
+                <div id="mask-modifier"></div>
+                
+                <form action="index.html">
+                    <label for=""><p>T-shirt simple color</p></label>
+                    <img src="img/Frame 105.png" height="10px" width="70px" alt="">
+                    <h3 class="price">12€ <span id="rayer">17€</span><img src="img/Frame 66.png" alt=""></h3>
+                    
+                    <label for="colorier"><p>Choisissez une couleur :</p></label>
+                    <input type="color" name="" value="#FFFFFF" id="colorier">
+
+                    <br>
+                    <label for="quant"><p>Quantité :</p></label>
+                    <input type="number" name="" id="quant" style="text-align:right;">
+                    <br>
+                    <input type="submit"  value="Revenir à l'accueil">
+                    <input type="submit"  onclick="alert('Produit ajouté au panier')" value="Ajouter au panier">
+                    
+                
+                </form>
+            </div>
+            </div>
+            
         </div>
         
-
         <div id="newsletter">
             <h3>STAY UP TO DATE <br> ABOUT OUR <br> LASTEST OFFERS</h3>
             <form action="#">
-                <input type="email" placeholder="    Enter your email adress" name="" id="news">
+                <input type="email"  placeholder="    Enter your email adress" name="" id="news">
                 <input id="submitnews" onclick="closeNews()" type="button"  value="Subscribe to newsletter">
             </form>
         </div>
