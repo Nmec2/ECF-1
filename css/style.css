@@ -43,6 +43,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    text-decoration: none;
+    
 }
 
 #product-contain{
@@ -60,12 +62,6 @@ time, mark, audio, video {
     color: white;
     font-family: 'Roboto';
 }
-
-/* #product-img {
-    height: 50%;
-     margin-top: 100px; 
-    
-} */
 
 #modifier > form {
     /* margin-left: 100px; */
@@ -91,7 +87,7 @@ time, mark, audio, video {
     transition: all 0.3s ease-in-out;
     font-family: 'Roboto';
     font-weight: bold;
-    
+    text-transform: uppercase;
 }
 
 #modifier > form > input[type='submit']:hover {
@@ -101,8 +97,13 @@ time, mark, audio, video {
     box-shadow: 2px 2px 8px #FFF;
 }
 
+#modifier > form > input[type='submit']:active {
+    transform: scale(0.8);
+}
+
 #modifier > form > label > p {
     font-size: 20px;
+
 }
 
 #right {
@@ -115,7 +116,6 @@ time, mark, audio, video {
     background: linear-gradient(to bottom right, #1B263B, #778DA9);
     border-radius: 15px;
     overflow: hidden;
-    v
     
 }
 
@@ -143,7 +143,7 @@ time, mark, audio, video {
     position: absolute;
     height: 360px;
     width: 360px;
-    background-color: #FFF;
+    background-color: rgb(365, 365, 365);
     mask-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.png");
     border-radius: 20px;
     filter: brightness(70%);
@@ -278,7 +278,7 @@ time, mark, audio, video {
     height: 172px;
     width: 172px;
     border-radius: 20px;
-    
+    display: block;
     align-self: center;
     background-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.png"), linear-gradient(to right, #1B263B , #778DA9);
     background-color: #D9D9D9;
