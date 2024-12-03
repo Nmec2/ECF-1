@@ -385,6 +385,16 @@ time, mark, audio, video {
     color: #FFF;
 } */
 
+#right p {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 28%;
+}
+
+
 #bar-filter {
     height: 1px;
     width: 290px;
@@ -437,6 +447,15 @@ time, mark, audio, video {
 
     #right {
         margin-top: 800px;
+    }
+
+    #right p {
+        color: #FFF;
+        font-family: 'Roboto';
+        font-weight: bold;
+        font-size: 50px;
+        margin-top: 20px;
+        margin-left: 28%;
     }
 
     #filter {
@@ -548,6 +567,11 @@ time, mark, audio, video {
 
 @media all and (min-width: 1000px) {
     
+    #right p {
+        margin-left: 20px;
+        position: absolute;
+    }
+
     #grid-container {
         height: 2100px;
         width: 290px;
@@ -755,12 +779,17 @@ time, mark, audio, video {
         margin-top: 0px;
     }
 
+    #right p {
+        position: relative;
+        margin-left: 130px;
+    }
+
     .scroll-slide {
         display: block;
         width:  380px;
         height: 380px;
         object-fit: cover;
-        margin: 50px 50px;
+        margin: 30px 50px;
         overflow: hidden;
     }
 }
