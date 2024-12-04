@@ -47,12 +47,43 @@ time, mark, audio, video {
     
 }
 
+body {
+    overflow-x: hidden;
+}
+
+.sliding {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.sliding p {
+    font-family: 'Roboto';
+    font-size: 17vw;
+    white-space: nowrap;
+    position: absolute;
+    font-weight: bold;
+    /* height: 100%; */
+    opacity: 38%;
+    line-height: 15vmax;
+    color: #739fff;
+    overflow: hidden;
+    margin-left: 5%;
+    align-self: center;
+    /* margin: 90px 90px; */
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+
 #product-contain{
     display: flex;
-    height: 900px;
+    height: 1000px;
     width: 100%;
     margin-top: 20px;
-    background:  #778DA9;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 29px, #778da9 29px, #778da9 58px);
+    background-color: #1b263b;
+    background-blend-mode: multiply;
     justify-content: center;
 }
 
@@ -66,6 +97,10 @@ time, mark, audio, video {
 #modifier > form {
     /* margin-left: 100px; */
     text-align: center;
+    background-color: transparent;
+    filter: drop-shadow(2px 2px 2px black);
+    
+    border: 2px solid #fff;
 }
 
 #modifier > form > input {
@@ -82,7 +117,10 @@ time, mark, audio, video {
 }
 
 #modifier > form > input[type='submit'] {
-    background-color: #c2d5ec;
+    width: 311px;
+    height: 42px;
+    border-radius: 62px;
+    margin-bottom: 12px;
     border-radius: 0px;
     transition: all 0.3s ease-in-out;
     font-family: 'Roboto';
@@ -117,6 +155,13 @@ time, mark, audio, video {
     border-radius: 15px;
     overflow: hidden;
     
+}
+
+#right p {
+    position: absolute;
+    left: 20%;
+    text-transform: uppercase;
+    opacity: 80%;
 }
 
 .scroll-slide {
@@ -159,7 +204,7 @@ time, mark, audio, video {
     width: 100%;
     background-color: #000;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 #container p {
@@ -172,12 +217,49 @@ time, mark, audio, video {
 
 #brand {
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
     display: flex;
     padding-top: 46px;
     justify-content: center;
+    position: relative;
+    z-index: 1;
 }
+
+#brand:before {
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: 100%;
+    color: #000000;
+    padding-top: 46px;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-before 3s infinite linear alternate-reverse;
+ }
+ 
+ #brand:after {
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    overflow-x: hidden;
+    left: 6px;
+    width: 100%;
+    color: #000000;
+    padding-top: 46px;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-after 2s infinite linear alternate-reverse;
+ }
+ 
 
 #bar {
     display: flex;
@@ -259,7 +341,14 @@ time, mark, audio, video {
 }
 
 #contain-footer ul li{
-    margin-top: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+
+#contain-footer ul li img{
+    position: absolute;
+    bottom: -3px;
+    left: -50px;
 }
 
 
@@ -307,12 +396,17 @@ time, mark, audio, video {
     color: rgba(0, 0, 0, 60%);
 }
 
+#rayer2 {
+    text-decoration: line-through;
+    color: rgba(365, 365, 365, 60%);
+}
+
 #newsletter {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-self: center;
-    margin-top: 200px;
+    margin-top: 70px;
     border-radius: 20px;
     height: 277px;
     width: 358px;
@@ -446,7 +540,7 @@ time, mark, audio, video {
 @media all and (min-width: 600px) {
 
     #right {
-        margin-top: 800px;
+        margin-top: 700px;
     }
 
     #right p {
@@ -538,13 +632,13 @@ time, mark, audio, video {
     }
 
     #newsletter {
-        margin-top: 900px;
+        margin-top: 100px;
     }
 
-    /* #bg{
+    #bg{
         height: 600px;
         max-width: 100%;
-    } */
+    }
 
     .contain {
         height: 200px;
@@ -564,9 +658,20 @@ time, mark, audio, video {
     
 }
 
+@media all and (min-width: 800px) {
+    #right p {
+        position: absolute;
+    }
+}
+
 
 @media all and (min-width: 1000px) {
     
+    #right {
+        margin-top: 150px;
+    }
+
+
     #right p {
         margin-left: 20px;
         position: absolute;
@@ -793,3 +898,176 @@ time, mark, audio, video {
         overflow: hidden;
     }
 }
+
+@keyframes noise-before {
+    0% {
+       clip: rect(61px, 9999px, 52px, 0);
+    }
+ 
+    5% {
+       clip: rect(33px, 9999px, 144px, 0);
+    }
+ 
+    10% {
+       clip: rect(121px, 9999px, 115px, 0);
+    }
+ 
+    15% {
+       clip: rect(144px, 9999px, 162px, 0);
+    }
+ 
+    20% {
+       clip: rect(62px, 9999px, 180px, 0);
+    }
+ 
+    25% {
+       clip: rect(34px, 9999px, 42px, 0);
+    }
+ 
+    30% {
+       clip: rect(147px, 9999px, 179px, 0);
+    }
+ 
+    35% {
+       clip: rect(99px, 9999px, 63px, 0);
+    }
+ 
+    40% {
+       clip: rect(188px, 9999px, 122px, 0);
+    }
+ 
+    45% {
+       clip: rect(154px, 9999px, 14px, 0);
+    }
+ 
+    50% {
+       clip: rect(63px, 9999px, 37px, 0);
+    }
+ 
+    55% {
+       clip: rect(161px, 9999px, 147px, 0);
+    }
+ 
+    60% {
+       clip: rect(109px, 9999px, 175px, 0);
+    }
+ 
+    65% {
+       clip: rect(157px, 9999px, 88px, 0);
+    }
+ 
+    70% {
+       clip: rect(173px, 9999px, 131px, 0);
+    }
+ 
+    75% {
+       clip: rect(62px, 9999px, 70px, 0);
+    }
+ 
+    80% {
+       clip: rect(24px, 9999px, 153px, 0);
+    }
+ 
+    85% {
+       clip: rect(138px, 9999px, 40px, 0);
+    }
+ 
+    90% {
+       clip: rect(79px, 9999px, 136px, 0);
+    }
+ 
+    95% {
+       clip: rect(25px, 9999px, 34px, 0);
+    }
+ 
+    100% {
+       clip: rect(173px, 9999px, 166px, 0);
+    }
+ }
+ 
+ @keyframes noise-after {
+    0% {
+       clip: rect(26px, 9999px, 33px, 0);
+    }
+ 
+    5% {
+       clip: rect(140px, 9999px, 198px, 0);
+    }
+ 
+    10% {
+       clip: rect(184px, 9999px, 89px, 0);
+    }
+ 
+    15% {
+       clip: rect(121px, 9999px, 6px, 0);
+    }
+ 
+    20% {
+       clip: rect(181px, 9999px, 99px, 0);
+    }
+ 
+    25% {
+       clip: rect(154px, 9999px, 133px, 0);
+    }
+ 
+    30% {
+       clip: rect(134px, 9999px, 169px, 0);
+    }
+ 
+    35% {
+       clip: rect(26px, 9999px, 187px, 0);
+    }
+ 
+    40% {
+       clip: rect(147px, 9999px, 137px, 0);
+    }
+ 
+    45% {
+       clip: rect(31px, 9999px, 52px, 0);
+    }
+ 
+    50% {
+       clip: rect(191px, 9999px, 109px, 0);
+    }
+ 
+    55% {
+       clip: rect(74px, 9999px, 54px, 0);
+    }
+ 
+    60% {
+       clip: rect(145px, 9999px, 75px, 0);
+    }
+ 
+    65% {
+       clip: rect(153px, 9999px, 198px, 0);
+    }
+ 
+    70% {
+       clip: rect(99px, 9999px, 136px, 0);
+    }
+ 
+    75% {
+       clip: rect(118px, 9999px, 192px, 0);
+    }
+ 
+    80% {
+       clip: rect(1px, 9999px, 83px, 0);
+    }
+ 
+    85% {
+       clip: rect(145px, 9999px, 98px, 0);
+    }
+ 
+    90% {
+       clip: rect(121px, 9999px, 154px, 0);
+    }
+ 
+    95% {
+       clip: rect(156px, 9999px, 44px, 0);
+    }
+ 
+    100% {
+       clip: rect(67px, 9999px, 122px, 0);
+    }
+ }
+ 
