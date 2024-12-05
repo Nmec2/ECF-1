@@ -3,26 +3,6 @@
    License: none (public domain)
 */
 
-@font-face {
-    font-family: 'Roboto';
-    src:
-        url('../fonts/Roboto-Black.ttf') format('truetype');
-    font-weight: bold;    
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src:
-        url('../fonts/Roboto-Medium.ttf') format('truetype');
-    font-weight: medium;    
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src:
-        url('../fonts/Roboto-Regular.ttf') format('truetype');
-    font-weight: regular;    
-}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -44,12 +24,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
     text-decoration: none;
-    
 }
 
-body {
-    overflow-x: hidden;
-}
 
 .sliding {
     margin-top: 50px;
@@ -59,7 +35,7 @@ body {
 }
 
 .sliding p {
-    font-family: 'Roboto';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 17vw;
     white-space: nowrap;
     position: absolute;
@@ -83,8 +59,6 @@ body {
     width: 100%;
     margin-top: 20px;
     background-image: linear-gradient(135deg, transparent 0%, transparent 17%,rgba(87, 146, 234,0.6) 17%, rgba(87, 146, 234,0.6) 59%,transparent 59%, transparent 64%,rgba(34, 81, 222,0.6) 64%, rgba(34, 81, 222,0.6) 100%),linear-gradient(45deg, transparent 0%, transparent 2%,rgb(87, 146, 234) 2%, rgb(87, 146, 234) 46%,rgb(114, 178, 239) 46%, rgb(114, 178, 239) 54%,transparent 54%, transparent 63%,rgb(7, 48, 216) 63%, rgb(7, 48, 216) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));background-image: linear-gradient(0deg, rgb(213, 229, 183) 0%, rgb(213, 229, 183) 17%,rgb(189, 213, 190) 17%, rgb(189, 213, 190) 29%,rgb(166, 196, 196) 29%, rgb(166, 196, 196) 38%,rgb(142, 180, 203) 38%, rgb(142, 180, 203) 47%,rgb(118, 164, 210) 47%, rgb(118, 164, 210) 58%,rgb(95, 147, 216) 58%, rgb(95, 147, 216) 88%,rgb(71, 131, 223) 88%, rgb(71, 131, 223) 100%),linear-gradient(157.5deg, rgb(213, 229, 183) 0%, rgb(213, 229, 183) 17%,rgb(189, 213, 190) 17%, rgb(189, 213, 190) 29%,rgb(166, 196, 196) 29%, rgb(166, 196, 196) 38%,rgb(142, 180, 203) 38%, rgb(142, 180, 203) 47%,rgb(118, 164, 210) 47%, rgb(118, 164, 210) 58%,rgb(95, 147, 216) 58%, rgb(95, 147, 216) 88%,rgb(71, 131, 223) 88%, rgb(71, 131, 223) 100%),linear-gradient(112.5deg, rgb(213, 229, 183) 0%, rgb(213, 229, 183) 17%,rgb(189, 213, 190) 17%, rgb(189, 213, 190) 29%,rgb(166, 196, 196) 29%, rgb(166, 196, 196) 38%,rgb(142, 180, 203) 38%, rgb(142, 180, 203) 47%,rgb(118, 164, 210) 47%, rgb(118, 164, 210) 58%,rgb(95, 147, 216) 58%, rgb(95, 147, 216) 88%,rgb(71, 131, 223) 88%, rgb(71, 131, 223) 100%),linear-gradient(90deg, rgb(213, 229, 183) 0%, rgb(213, 229, 183) 17%,rgb(189, 213, 190) 17%, rgb(189, 213, 190) 29%,rgb(166, 196, 196) 29%, rgb(166, 196, 196) 38%,rgb(142, 180, 203) 38%, rgb(142, 180, 203) 47%,rgb(118, 164, 210) 47%, rgb(118, 164, 210) 58%,rgb(95, 147, 216) 58%, rgb(95, 147, 216) 88%,rgb(71, 131, 223) 88%, rgb(71, 131, 223) 100%),linear-gradient(90deg, rgb(173, 92, 95),rgb(110, 20, 174)); background-blend-mode:overlay,overlay,overlay,overlay,normal;
-    /* background-color: #1b263b; */
-    /* background-blend-mode: multiply;  */
     justify-content: center;
 }
 
@@ -96,12 +70,9 @@ body {
 }
 
 #modifier > form {
-    /* margin-left: 100px; */
     text-align: center;
     background-color: transparent;
     filter: drop-shadow(2px 2px 2px black);
-    
-    border: 2px solid #fff;
 }
 
 #modifier > form > input {
@@ -109,8 +80,6 @@ body {
     height: 30px;
     border: 1px solid #1B263B;
     margin-bottom: 10px;
-    box-shadow: 2px 2px 4px #1B263B;
-    
 }
 
 #modifier > form > input[type='number']{
@@ -180,7 +149,7 @@ body {
     height: 360px;
     width: 360px;
     border-radius: 10px;
-    background-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.png")/*, linear-gradient(to right bottom, #1B263B 50%, #778DA9, 10%, #778DA9)*/; 
+    background-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.webp")/*, linear-gradient(to right bottom, #1B263B 50%, #778DA9, 10%, #778DA9)*/; 
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
@@ -191,7 +160,7 @@ body {
     height: 360px;
     width: 360px;
     background-color: rgb(365, 365, 365);
-    mask-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.png");
+    mask-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.webp");
     border-radius: 20px;
     filter: brightness(70%);
     mix-blend-mode: hard-light;
@@ -225,43 +194,7 @@ body {
     padding-top: 46px;
     justify-content: center;
     position: relative;
-    z-index: 1;
 }
-
-#brand:before {
-    content: attr(data-glitch);
-    position: absolute;
-    top: 0;
-    left: -4px;
-    width: 100%;
-    color: #000000;
-    padding-top: 46px;
-    background-color: #ffffff;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    overflow-x: hidden;
-    clip: rect(0, 900px, 0, 0);
-    animation: noise-before 3s infinite linear alternate-reverse;
- }
- 
- #brand:after {
-    content: attr(data-glitch);
-    position: absolute;
-    top: 0;
-    overflow-x: hidden;
-    left: 4px;
-    width: 100%;
-    color: #000000;
-    padding-top: 46px;
-    background-color: #ffffff;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    clip: rect(0, 900px, 0, 0);
-    animation: noise-after 2s infinite linear alternate-reverse;
- }
- 
 
 #bar {
     display: flex;
@@ -314,12 +247,6 @@ body {
     row-gap: 100px;
 }
 
-#subdiv {
-    height: 150px;
-    width: 100%;
-    background-color: #FFF;
-}
-
 #contain-footer {
     margin-top: 80px;
     background-color: #D9D9D9;
@@ -359,7 +286,7 @@ body {
     height: 172px;
     width: 172px;
     background-color: red;
-    mask-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.png");
+    mask-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.webp");
     border-radius: 20px;
     filter: brightness(70%);
     mix-blend-mode: hard-light;
@@ -371,7 +298,7 @@ body {
     border-radius: 20px;
     display: block;
     align-self: center;
-    background-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.png"), linear-gradient(to right, #1B263B , #778DA9);
+    background-image: url("../img/pngtree-t-shirt-3d-rendering-realistic-png-image_10000399.webp"), linear-gradient(to right, #1B263B , #778DA9);
     background-color: #D9D9D9;
     transition: all 0.4s ease-in-out;
 }
@@ -387,11 +314,6 @@ body {
 .price {
     font-family: 'Roboto', sans-serif;
     font-size: 23px;
-}
-
-.price > img {
-    height: 23px;
-
 }
 
 #rayer {
@@ -439,10 +361,10 @@ body {
 }
 
 #bg {
-    height: 300px ;
-    width: 100%;
+    height: 20vh ;
+    width: 100vw;
     max-width: 100%;
-    background-image: url("../img/Group\ 3.png");
+    background-image: url("../img/Group3.webp");
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
@@ -555,80 +477,6 @@ body {
         margin-left: 28%;
     }
 
-    #filter {
-        left: -15px;
-        top: 60px;
-
-        height: 500px;
-        width: 358px;
-        background: linear-gradient(to right bottom,#000, rgb(49, 49, 49));
-        /* backdrop-filter: blur(20px),
-                         hue-rotate(90deg); */
-        border-radius: 20px;
-        border: 1px solid black;
-    }
-
-    #filter form h3 {
-        margin: 20px 50px;
-        font-size: 19px;
-        font-family: 'Roboto';
-        font-weight: bold;
-        color: #FFF;
-    }
-
-    #filter form h3 span {
-        position: absolute;
-        right: 30px;
-        color: #FFF;
-    }
-    
-
-    /* #filter form h3 a {
-        text-decoration: none;
-        color: #000;
-        color: #FFF;
-    } */
-
-    #bar-filter {
-        height: 1px;
-        width: 290px;
-        background-color: #FFF;
-        margin: 0 auto;
-        
-    }
-
-    #category {
-        display: grid;
-        gap: 5px;
-        text-decoration: none;
-    }
-
-    #range-price{
-        margin: 0px 120px;
-    }
-
-    #filter form input[type="color"]{
-        margin: 0px 120px;
-        width: 100px;
-    }
-
-    #filter form input[type="button"]{
-        margin-left: 20px;
-        align-items: end;
-        width: 311px;
-        height: 42px;
-        border: 1px solid #D9D9D9;
-        border-radius: 62px;
-        margin-top: 52px;
-        font-family: 'Roboto';
-    }
-
-    #category a {
-        font-family: 'Roboto';
-        text-decoration: none;
-        color: #FFF;
-    }
-
     #grid-container{
         grid-template-columns: repeat(3, 1fr);
         row-gap: 100px;
@@ -639,7 +487,7 @@ body {
     }
 
     #bg{
-        height: 600px;
+        height: 60vh;
         max-width: 100%;
     }
 
@@ -687,80 +535,6 @@ body {
         column-gap: 30px;
     }
 
-    #filter {
-        /* left: 35px;
-        top: 100px; */
-
-        height: 500px;
-        width: 358px;
-        background: linear-gradient(to right bottom,#000, rgb(49, 49, 49));
-        /* backdrop-filter: blur(20px),
-                         hue-rotate(90deg); */
-        border-radius: 20px;
-        border: 1px solid black;
-    }
-
-    #filter form h3 {
-        margin: 20px 50px;
-        font-size: 19px;
-        font-family: 'Roboto';
-        font-weight: bold;
-        color: #FFF;
-    }
-
-    #filter form h3 span {
-        position: absolute;
-        right: 30px;
-        color: #FFF;
-    }
-    
-
-    /* #filter form h3 a {
-        text-decoration: none;
-        color: #000;
-        color: #FFF;
-    } */
-
-    #bar-filter {
-        height: 1px;
-        width: 290px;
-        background-color: #FFF;
-        margin: 0 auto;
-        
-    }
-
-    #category {
-        display: grid;
-        gap: 5px;
-        text-decoration: none;
-    }
-
-    #range-price{
-        margin: 0px 120px;
-    }
-
-    #filter form input[type="color"]{
-        margin: 0px 120px;
-        width: 100px;
-    }
-
-    #filter form input[type="button"]{
-        margin-left: 20px;
-        align-items: end;
-        width: 311px;
-        height: 42px;
-        border: 1px solid #D9D9D9;
-        border-radius: 62px;
-        margin-top: 52px;
-        font-family: 'Roboto';
-    }
-
-    #category a {
-        font-family: 'Roboto';
-        text-decoration: none;
-        color: #FFF;
-    }
-
     .contain {
         height: 290px;
         width: 290px;
@@ -791,82 +565,8 @@ body {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    #filter {
-        
-        height: 500px;
-        width: 358px;
-        background: linear-gradient(to right bottom,#000, rgb(49, 49, 49));
-        /* backdrop-filter: blur(20px),
-                         hue-rotate(90deg); */
-        border-radius: 20px;
-        border: 1px solid black;
-    }
-
-    #filter form h3 {
-        margin: 20px 50px;
-        font-size: 19px;
-        font-family: 'Roboto';
-        font-weight: bold;
-        color: #FFF;
-    }
-
-    #filter form h3 span {
-        position: absolute;
-        right: 30px;
-        color: #FFF;
-    }
-    
-
-    /* #filter form h3 a {
-        text-decoration: none;
-        color: #000;
-        color: #FFF;
-    } */
-
-    #bar-filter {
-        height: 1px;
-        width: 290px;
-        background-color: #FFF;
-        margin: 0 auto;
-        
-    }
-
-    #category {
-        display: grid;
-        gap: 5px;
-        text-decoration: none;
-    }
-
-    #range-price{
-        margin: 0px 120px;
-    }
-
-    #filter form input[type="color"]{
-        margin: 0px 120px;
-        width: 100px;
-    }
-
-    #filter form input[type="button"]{
-        margin-left: 20px;
-        align-items: end;
-        width: 311px;
-        height: 42px;
-        border: 1px solid #D9D9D9;
-        border-radius: 62px;
-        margin-top: 52px;
-        font-family: 'Roboto';
-    }
-
-    #category a {
-        font-family: 'Roboto';
-        text-decoration: none;
-        color: #FFF;
-    }
-
-    
-
     #bg{
-        height: 880px;
+        height: 88vh;
         max-width: 100%;
     }
 
@@ -883,7 +583,7 @@ body {
         width: 470px;
         position: absolute;
         right: 30px;
-        top: 1220px;
+        top: 1100px;
         margin-top: 0px;
     }
 
@@ -902,175 +602,6 @@ body {
     }
 }
 
-@keyframes noise-before {
-    0% {
-       clip: rect(61px, 9999px, 52px, 0);
-    }
- 
-    5% {
-       clip: rect(33px, 9999px, 144px, 0);
-    }
- 
-    10% {
-       clip: rect(121px, 9999px, 115px, 0);
-    }
- 
-    15% {
-       clip: rect(144px, 9999px, 162px, 0);
-    }
- 
-    20% {
-       clip: rect(62px, 9999px, 180px, 0);
-    }
- 
-    25% {
-       clip: rect(34px, 9999px, 42px, 0);
-    }
- 
-    30% {
-       clip: rect(147px, 9999px, 179px, 0);
-    }
- 
-    35% {
-       clip: rect(99px, 9999px, 63px, 0);
-    }
- 
-    40% {
-       clip: rect(188px, 9999px, 122px, 0);
-    }
- 
-    45% {
-       clip: rect(154px, 9999px, 14px, 0);
-    }
- 
-    50% {
-       clip: rect(63px, 9999px, 37px, 0);
-    }
- 
-    55% {
-       clip: rect(161px, 9999px, 147px, 0);
-    }
- 
-    60% {
-       clip: rect(109px, 9999px, 175px, 0);
-    }
- 
-    65% {
-       clip: rect(157px, 9999px, 88px, 0);
-    }
- 
-    70% {
-       clip: rect(173px, 9999px, 131px, 0);
-    }
- 
-    75% {
-       clip: rect(62px, 9999px, 70px, 0);
-    }
- 
-    80% {
-       clip: rect(24px, 9999px, 153px, 0);
-    }
- 
-    85% {
-       clip: rect(138px, 9999px, 40px, 0);
-    }
- 
-    90% {
-       clip: rect(79px, 9999px, 136px, 0);
-    }
- 
-    95% {
-       clip: rect(25px, 9999px, 34px, 0);
-    }
- 
-    100% {
-       clip: rect(173px, 9999px, 166px, 0);
-    }
- }
- 
- @keyframes noise-after {
-    0% {
-       clip: rect(26px, 9999px, 33px, 0);
-    }
- 
-    5% {
-       clip: rect(140px, 9999px, 198px, 0);
-    }
- 
-    10% {
-       clip: rect(184px, 9999px, 89px, 0);
-    }
- 
-    15% {
-       clip: rect(121px, 9999px, 6px, 0);
-    }
- 
-    20% {
-       clip: rect(181px, 9999px, 99px, 0);
-    }
- 
-    25% {
-       clip: rect(154px, 9999px, 133px, 0);
-    }
- 
-    30% {
-       clip: rect(134px, 9999px, 169px, 0);
-    }
- 
-    35% {
-       clip: rect(26px, 9999px, 187px, 0);
-    }
- 
-    40% {
-       clip: rect(147px, 9999px, 137px, 0);
-    }
- 
-    45% {
-       clip: rect(31px, 9999px, 52px, 0);
-    }
- 
-    50% {
-       clip: rect(191px, 9999px, 109px, 0);
-    }
- 
-    55% {
-       clip: rect(74px, 9999px, 54px, 0);
-    }
- 
-    60% {
-       clip: rect(145px, 9999px, 75px, 0);
-    }
- 
-    65% {
-       clip: rect(153px, 9999px, 198px, 0);
-    }
- 
-    70% {
-       clip: rect(99px, 9999px, 136px, 0);
-    }
- 
-    75% {
-       clip: rect(118px, 9999px, 192px, 0);
-    }
- 
-    80% {
-       clip: rect(1px, 9999px, 83px, 0);
-    }
- 
-    85% {
-       clip: rect(145px, 9999px, 98px, 0);
-    }
- 
-    90% {
-       clip: rect(121px, 9999px, 154px, 0);
-    }
- 
-    95% {
-       clip: rect(156px, 9999px, 44px, 0);
-    }
- 
-    100% {
-       clip: rect(67px, 9999px, 122px, 0);
-    }
- }
+
+
  
