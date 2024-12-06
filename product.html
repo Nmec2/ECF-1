@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="t-shirt website">
+
     <title>T-shirt</title>
     <link rel="icon" type="image/x-icon" href="img/Nouveau-projet.ico">
     <link rel="preload" as="font" href="/fonts/Roboto-Black.ttf" crossorigin>
     <link rel="preload" as="font" href="/fonts/Roboto-Medium.ttf" crossorigin>
+    <ph type="x-smartling-placeholder"></ph>
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            src:
+                url('../fonts/Roboto-Black.ttf') format('truetype');
+            font-weight: bold;    
+            }
+
+        @font-face {
+        font-family: 'Roboto';
+        src:
+            url('../fonts/Roboto-Medium.ttf') format('truetype');
+        font-weight: medium;    
+        }
+    </style>
 
     <link rel="preload" as="image" href="img/Group3.webp">
     <link rel="preload" as="image" href="img/pngimg.comjacket_PNG8055.webp">
@@ -26,7 +45,7 @@
         <div id="container">
             <p>20% off for your first order.</p>
         </div>
-        <h1 id="brand">INSTA SHOP</h1>
+        <a href="index.html"><h1 id="brand">INSTA SHOP</h1></a>
         <div id="bar"></div>
     </header>
 
@@ -68,6 +87,7 @@
         </div>
         <div class="sliding">
             <p>Best sale</p>
+            
             <img class="scroll-slide" src="img/pngimg.com-jacket_PNG8054.webp" alt="">
             <img class="scroll-slide" src="img/pngimg.comjacket_PNG8055.webp" alt="">
             <img class="scroll-slide" src="img/shorts_01v_frame-1-removebg-preview.webp"  alt="">
@@ -75,6 +95,7 @@
         </div>
 
         <div id="newsletter">
+            <button onclick="closeNews()">x</button>
             <h3>STAY UP TO DATE <br> ABOUT OUR <br> LASTEST OFFERS</h3>
             <form action="#">
                 <input type="email"  placeholder="    Enter your email adress" name="" id="news">

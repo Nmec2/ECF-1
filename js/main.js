@@ -57,14 +57,13 @@ let maskColor = document.getElementById("mask-modifier");
 
 console.log(colorInput);
 
-colorInput.addEventListener("input", function() {
-    let couleurChoice = colorInput.value;
-    maskColor.style.backgroundColor = couleurChoice;
-})
-
-function short(){
-    
+if (path == "/product.html") {
+    colorInput.addEventListener("input", function() {
+        let couleurChoice = colorInput.value;
+        maskColor.style.backgroundColor = couleurChoice;
+    })  
 }
+
 
 
 

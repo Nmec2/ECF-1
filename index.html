@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="t-shirt website">
     <title>Home</title>
 
+    <link rel="preload" as="font" href="/fonts/Roboto-Black.ttf" crossorigin>
+    <link rel="preload" as="font" href="/fonts/Roboto-Medium.ttf" crossorigin>
     <style>
         @font-face {
             font-family: 'Roboto';
@@ -21,8 +24,7 @@
         }
     </style>
 
-    <link rel="preload" as="font" href="/fonts/Roboto-Black.ttf" crossorigin>
-    <link rel="preload" as="font" href="/fonts/Roboto-Medium.ttf" crossorigin>
+    
 
     <link rel="icon" type="image/x-icon" href="img/Nouveau-projet.ico">
     <link rel="preload" as="image" href="img/Group3.webp">
@@ -204,6 +206,7 @@
         </div>
         
         <div id="newsletter">
+            <button onclick="closeNews()">x</button>
             <h3>STAY UP TO DATE <br> ABOUT OUR <br> LASTEST OFFERS</h3>
             <form action="#">
                 <input type="email"  placeholder="    Enter your email adress" name="" id="news">
@@ -216,9 +219,9 @@
     
     <footer>
         <div id="contain-footer">
-            
+            <h3>Social Media</h3>
             <ul>
-                <h3>Social Media</h3>
+                
                 <li>Instagram <img src="img/5279112_camera_nstagram_socialmedia_instagramlogo_icon.webp" height="30px" width="30px" alt=""> </li>
                 <li>Twitter <img src="img/5305170_bird_socalmedia_socialnetwork_tweet_twitter_icon.webp" height="30px" width="30px" alt=""></li>
                 <li>TikTok <img src="img/4362958_tiktok_lo_socialmedia_icn.webp" height="30px" width="30px" alt=""></li>
